@@ -1,0 +1,34 @@
+@use '../helpers' as *;
+
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+
+  &::after {
+    --size: #{rem(24)};
+
+    @include square(var(--size));
+
+    content: '';
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include laptop {
+      --size: #{rem(20)};
+    }
+
+    @include mobile {
+      --size: #{rem(30)};
+    }
+  }
+
+  &--sun-light {
+    &::after {
+      background-image: url('../../icons/theme-sun-light.svg');
+    }
+  }
+}

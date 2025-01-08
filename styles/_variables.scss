@@ -1,0 +1,57 @@
+@use 'helpers' as *;
+
+:root {
+  --color-main: #111111;
+  --color-accent: #6CACE4;
+
+
+  --color-dark-500: #201F1F;
+
+  --color-light-100: #ffff;
+  --color-light-300: #F0F0F0;
+  --color-light-500: #C4C4C4;
+
+  --font-family-base: 'Inter', sans-serif;
+
+  --container-width: #{rem(1220)};
+  --container-padding-x: #{rem(15)};
+
+  --transition-duration: 0.2s;
+
+  --gradient-1: linear-gradient(
+    45deg,
+    #9358F7 0,
+    #9259F7 7%,
+    #8E5DF6 13%,
+    #8862F5 20%,
+    #806BF4 27%,
+    #7575F2 33%,
+    #6882F0 40%,
+    #5990EE 47%,
+    #4A9FEB 53%,
+    #3BADE9 60%,
+    #2EBAE7 67%,
+    #23C4E5 73%,
+    #1BCDE4 80%,
+    #15D2E3 87%,
+    #11D6E2 93%,
+    #10D7E2 100%
+  );
+
+  --gradient-2: linear-gradient(
+    -45deg,
+    #6964DE 0,
+    #FCA6E9 100%,
+  );
+  --gradient-3: linear-gradient(
+    -45deg,
+    #F4426C 0,
+    #FBF2B1 100%,
+  );
+
+  --gradient-4: linear-gradient(
+    -45deg,
+    #D24074 0,
+    #6518B4 100%,
+  )
+}

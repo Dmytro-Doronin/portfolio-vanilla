@@ -1,0 +1,10 @@
+@use '../helpers' as *;
+.button {
+  display: inline-flex;
+  justify-content: center;
+  &--hidden {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
