@@ -4,6 +4,12 @@
   position: sticky;
   z-index: 100;
   top: 0;
+  padding-bottom: var(--global-padding);
+  background-color: var(--color-main);
+
+  @include mobile {
+    padding-bottom: 0;
+  }
 
   &__body {
     padding-block: rem(47);
@@ -65,7 +71,7 @@
       display: flex;
       align-items: center;
       column-gap: rem(30);
-
+      transition: none;
       @include laptop {
         column-gap: rem(20);
       }

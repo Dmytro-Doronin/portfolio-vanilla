@@ -1,5 +1,5 @@
 @use '../helpers' as *;
 
 .section {
-  padding-top: rem(131);
+  padding-block: var(--global-padding);
 }

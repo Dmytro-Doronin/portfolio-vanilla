@@ -23,12 +23,10 @@ class Header {
         this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
         this.overlayElement.classList.toggle(this.stateClasses.isActive);
         document.documentElement.classList.toggle(this.stateClasses.isLock);
-        console.log('asdasd')
     }
 
     bindEvents() {
         this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick);
-        console.log('asdasd')
     }
 }
 

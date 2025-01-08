@@ -10,27 +10,38 @@ html {
 body {
   @include fluid-text(18, 14);
 
-  letter-spacing: -0.03em;
   font-family: var(--font-family-base);
   color: var(--color-light-100);
   background-color: var(--color-main);
+
 }
 
 p, span {
   font-weight: 300;
 }
 
-a,
-button,
-label,
-input,
-textarea,
-select,
-span, * {
+a:hover,
+button:hover,
+label:hover,
+input:hover,
+textarea:hover,
+select:hover,
+span:hover,
+*:hover,{
   transition-duration: var(--transition-duration);
 }
 
-a {
+//a,
+//button,
+//label,
+//input,
+//textarea,
+//select,
+//span, * {
+//  transition-duration: var(--transition-duration);
+//}
+
+a, button > svg {
   color: inherit;
 
   @include hover {
@@ -57,10 +68,14 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @include fluid-text(24, 20);
+  @include fluid-text(44, 24);
 }
 
 h3, .h3 {
+  @include fluid-text(24, 20);
+}
+
+h3, .h4 {
   @include fluid-text(18, 14);
 }
 

@@ -4,6 +4,7 @@
   --color-main: #111111;
   --color-accent: #6CACE4;
 
+  --global-padding: #{rem(70)};
 
   --color-dark-500: #201F1F;
 
@@ -11,13 +12,29 @@
   --color-light-300: #F0F0F0;
   --color-light-500: #C4C4C4;
 
+
+  --c-dark-for-shadow: #000;
+
   --font-family-base: 'Inter', sans-serif;
 
   --container-width: #{rem(1220)};
   --container-padding-x: #{rem(15)};
-
+  --border-radius: #{rem(16)};
   --transition-duration: 0.2s;
+  --marginBottom: #{rem(40)};
 
+  //border
+  --border-radius-1: #{rem(16)};
+  --border-radius-2: #{rem(32)};
+  --border-radius-3: #{rem(10)};
+
+  //box-shadow
+  --box-shadow-3: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--c-dark-for-shadow);
+  --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
+  --box-shadow-3-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
+  --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
+
+  //gradients
   --gradient-1: linear-gradient(
     45deg,
     #9358F7 0,
@@ -54,4 +71,17 @@
     #D24074 0,
     #6518B4 100%,
   )
+}
+
+.light-theme {
+  --color-main: #ececec;
+  --color-light-100: #000000;
+  --color-light-300: #111111;
+  --color-light-500: #111111;
+
+
+  --box-shadow-3: -8px -8px 12px hsla(0, 0%, 100%, .8), 8px 8px 12px rgba(0, 0, 0, .05);
+  --box-shadow-inset-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0), inset 2px 2px 4px transparent;
+  --box-shadow-3-transparent: -8px -8px 12px hsla(0, 0%, 100%, 0), 8px 8px 12px transparent;
+  --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .35);
 }

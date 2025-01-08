@@ -37,6 +37,7 @@
       line-height: rem(24);
       text-align: justify;
       margin-bottom: rem(40);
+      color: var(--color-light-300);
 
       @include mobile {
         max-width: rem(600);
@@ -61,7 +62,8 @@
   }
 
   &__photo-image {
-    border-radius: rem(10);
+    border-radius: var(--border-radius-3);
+
     @include laptop {
       width: rem(230);
     }
