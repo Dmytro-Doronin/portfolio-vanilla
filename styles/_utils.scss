@@ -7,21 +7,6 @@
   padding-inline: var(--container-padding-x);
 }
 
-.sun-button {
-  --sunSize: #{rem(24)};
-
-  min-height: var(--sunSize);
-
-  &::after {
-    @include square(var(--sunSize) !important);
-    content: '';
-    right: 0;
-
-    background: url("../../icons/theme-sun-light.svg") center no-repeat
-    var(--color-light-100);
-    border-radius: 50%;
-  }
-}
 
 .visually-hidden {
   @include visually-hidden;

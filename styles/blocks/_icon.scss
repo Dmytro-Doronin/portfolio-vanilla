@@ -26,6 +26,10 @@
     }
   }
 
+  &--left {
+    margin-left: rem(15);
+  }
+
   &--sun-light {
     &::after {
       background-image: url('../../icons/theme-sun-light.svg');
