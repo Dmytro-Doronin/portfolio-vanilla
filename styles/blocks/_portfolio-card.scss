@@ -1,0 +1,67 @@
+@use '../helpers' as *;
+
+.portfolio-card {
+
+  display: grid;
+  column-gap: rem(20);
+  grid-template-areas:
+  'image body'
+  'image body';
+  grid-template-columns: auto 1fr;
+  --shadowBefore: var(--box-shadow-3), var(--box-shadow-inset-transparent);
+  --shadowAfter: var(--box-shadow-3-transparent), var(--box-shadow-inset);
+  box-shadow: var(--shadowBefore);
+
+  border-radius: var(--border-radius-2);
+  padding: rem(40);
+
+  &__image-wrapper {
+    grid-area: image;
+    overflow: hidden;
+  }
+
+  &__image {
+    box-shadow: var(--box-shadow-3);
+    border-radius: rem(10);
+    height: auto;
+    filter: opacity(0.9);
+    object-fit: cover;
+    transition-duration: var(--transition-duration);
+
+    &:hover {
+        transform: scale(110%);
+    }
+  }
+
+  &__body {
+    grid-area: body;
+    display: grid;
+    row-gap: rem(20);
+  }
+
+  &__title {
+    align-self: start;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    &::after {
+      content: '';
+      top: rem(-15);
+      right: rem(-25);
+      width: 0.4em;
+      height: 0.4em;
+      background-image: url("../../icons/portfolio/link.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__description {
+    color: var(--color-light-500);
+    text-align: justify;
+  }
+
+}

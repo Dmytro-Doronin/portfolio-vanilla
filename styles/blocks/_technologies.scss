@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.technologies {
+
+  &__list {
+    display: flex;
+    gap: rem(20);
+    flex-wrap: wrap;
+    &-item {
+      --size: 64px;
+      align-items: center;
+      display: flex;
+      height: var(--size);
+      justify-content: center;
+      width: var(--size);
+
+      border: 1px solid transparent;
+      border-radius: 50%;
+      box-shadow: var(--box-shadow-inset-2);
+    }
+
+  }
+
+}

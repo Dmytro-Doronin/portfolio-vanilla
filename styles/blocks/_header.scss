@@ -4,11 +4,14 @@
   position: sticky;
   z-index: 100;
   top: 0;
-  padding-bottom: var(--global-padding);
   background-color: var(--color-main);
 
   @include mobile {
     padding-bottom: 0;
+  }
+
+  &__logo {
+    font-weight: 500;
   }
 
   &__body {
@@ -53,7 +56,6 @@
   &__menu {
     display: flex;
     column-gap: rem(30);
-
     @include laptop {
       column-gap: rem(20);
     }
@@ -71,7 +73,7 @@
       display: flex;
       align-items: center;
       column-gap: rem(30);
-      transition: none;
+      //transition: none;
       @include laptop {
         column-gap: rem(20);
       }
@@ -83,6 +85,7 @@
     }
 
     &-link {
+
       @include mobile {
         font-size: rem(20);
       }

@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+.portfolio {
+  display: grid;
+  row-gap: rem(40);
+
+  &__tabs {
+    &-buttons {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: rem(20);
+      row-gap: rem(20);
+      @include laptop {
+        column-gap: rem(14);
+      }
+
+      @include tablet {
+        width: max-content;
+      }
+    }
+
+    &-button {
+      padding: fluid(10, 6) rem(11);
+      color: var(--color-gray-60);
+      background-color: transparent;
+      border: var(--border);
+      border-radius: rem(8);
+      font-size: rem(18);
+      @include laptop {
+        font-size: rem(14);
+      }
+
+      @include hover {
+        color: var(--color-accent);
+      }
+
+      &.is-active {
+        color: var(--color-light);
+        font-weight: 500;
+        background-color: var(--color-dark-700);
+        pointer-events: none;
+      }
+    }
+
+  }
+
+}

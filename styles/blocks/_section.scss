@@ -1,5 +1,18 @@
 @use '../helpers' as *;
 
 .section {
-  padding-block: var(--global-padding);
+  --global-padding: #{rem(160)};
+
+  padding-top: var(--global-padding);
+
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: rem(40);
+  }
+
+
+  @include mobile {
+    --global-padding: #{rem(120)};
+  }
 }

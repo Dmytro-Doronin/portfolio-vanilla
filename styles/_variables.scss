@@ -4,9 +4,9 @@
   --color-main: #111111;
   --color-accent: #6CACE4;
 
-  --global-padding: #{rem(70)};
 
   --color-dark-500: #201F1F;
+  --color-dark-700: #1F1E1E;
 
   --color-light-100: #ffff;
   --color-light-300: #F0F0F0;
@@ -33,6 +33,7 @@
   --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
   --box-shadow-3-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
   --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
+  --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
 
   //gradients
   --gradient-1: linear-gradient(
@@ -78,7 +79,7 @@
   --color-light-100: #000000;
   --color-light-300: #111111;
   --color-light-500: #111111;
-
+  --color-dark-500: #C4C4C4;
 
   --box-shadow-3: -8px -8px 12px hsla(0, 0%, 100%, .8), 8px 8px 12px rgba(0, 0, 0, .05);
   --box-shadow-inset-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0), inset 2px 2px 4px transparent;
