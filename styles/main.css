@@ -272,6 +272,9 @@ svg * {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 html.is-lock {
   overflow: hidden;
 }
@@ -309,11 +312,13 @@ a, button > svg {
 @media (any-hover: hover) {
   a:hover, button > svg:hover {
     color: var(--color-accent);
+    cursor: pointer;
   }
 }
 @media (any-hover: none) {
   a:active, button > svg:active {
     color: var(--color-accent);
+    cursor: pointer;
   }
 }
 a[class], button > svg[class] {
@@ -727,6 +732,12 @@ h3, .h4 {
   font-weight: 500;
   background-color: var(--color-dark-700);
   pointer-events: none;
+}
+.portfolio__content:not(.is-active) {
+  display: none;
+}
+.portfolio__content:focus-visible {
+  outline-offset: -1rem;
 }
 
 .portfolio-card {

@@ -21,10 +21,10 @@
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">Skills</a>
+                  <a href="#skills" class="header__menu-link">Skills</a>
               </li>
               <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">Projects</a>
+                  <a href="#portfolio" class="header__menu-link">Projects</a>
               </li>
               <li class="header__menu-item">
                   <a href="#" class="header__menu-link">Contacts</a>
@@ -152,7 +152,8 @@
                   role="tab"
                   aria-controls="tabpanel-2"
                   data-js-tabs-button
-                  aria-selected="true"
+                  aria-selected="false"
+                  tabindex="-1"
               >
                 Vanilla Js
               </button>
@@ -160,7 +161,7 @@
             <div class="portfolio__body">
               <div
                   class="portfolio__content is-active"
-                  id="dabpanel-1"
+                  id="tabpanel-1"
                   aria-labelledby="tab-1"
                   tabindex="0"
                   data-js-tabs-content
@@ -293,6 +294,86 @@
                           <ul class="technologies__list">
                             <li class="technologies__list-item">
                               <img src="#" alt="" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div
+                  class="portfolio__content"
+                  id="tabpanel-2"
+                  aria-labelledby="tab-2"
+                  tabindex="0"
+                  data-js-tabs-content
+              >
+                <ul class="portfolio__list grid">
+                  <li class="portfolio__list-item">
+                    <article class="portfolio-card">
+                      <div class="portfolio-card__image-wrapper">
+                        <img
+                            src="./images/portfolio/blogs.png"
+                            alt=""
+                            class="portfolio-card__image"
+                            width="400" height="320"
+                            loading="lazy"
+                        />
+                      </div>
+                      <div class="portfolio-card__body">
+                        <div class="portfolio-card__header">
+                          <h2 class="portfolio-card__header-title">Blog</h2>
+                          <div class="portfolio-card__header-links">
+                            <a href="#" class="portfolio-card__header-link">
+                              <img
+                                  src="./images/portfolio/web.png"
+                                  alt="web-site"
+                                  width="36"
+                                  height="36"
+                                  class="portfolio-card__header-image"
+                              />
+                            </a>
+                            <a href="#" class="portfolio-card__header-link">
+                              <img
+                                  src="./images/portfolio/github-2.png"
+                                  alt="github"
+                                  width="36"
+                                  height="36"
+                                  class="portfolio-card__header-image link link--github"
+                              />
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-card__description">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, earum ex expedita
+                            harum id impedit magni maiores officia ratione? Dignissimos earum hic magni, quibusdam quidem
+                            quisquam quo recusandae similique.
+                          </p>
+                        </div>
+                        <div class="technologies">
+                          <ul class="technologies__list">
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/angular.png" alt="Angular" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/badge.png" alt="NgRx" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/typescript.png" alt="Typescript" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/node.png" alt="Node" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/NestJS.svg" alt="NestJs" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/mongo.png" alt="MongoDb" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/aws.png" alt="Aws3" class="technologies__list-image" width="36" height="36"/>
                             </li>
                           </ul>
                         </div>

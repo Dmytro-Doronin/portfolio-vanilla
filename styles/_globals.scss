@@ -2,6 +2,7 @@
 
 
 html {
+  scroll-behavior: smooth;
   &.is-lock {
     overflow: hidden;
   }
@@ -50,6 +51,7 @@ a, button > svg {
 
   @include hover {
     color: var(--color-accent);
+    cursor: pointer;
   }
 
   &[class] {
