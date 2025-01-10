@@ -5,15 +5,19 @@
   &__main {
     display: grid;
 
+
     @include mobile-above {
       grid-template-columns: 1fr auto;
-      column-gap: rem(50);
+      column-gap: rem(270);
     }
 
     @include mobile {
       row-gap: rem(40);
     }
 
+    @include tablet {
+      column-gap: rem(200);
+    }
   }
 
   &__body  {

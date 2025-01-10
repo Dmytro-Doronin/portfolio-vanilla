@@ -7,7 +7,7 @@
     gap: rem(20);
     flex-wrap: wrap;
     &-item {
-      --size: 64px;
+      --size: #{rem(64)};
       align-items: center;
       display: flex;
       height: var(--size);
@@ -17,6 +17,23 @@
       border: 1px solid transparent;
       border-radius: 50%;
       box-shadow: var(--box-shadow-inset-2);
+
+      &:hover {
+        border: 1px solid var(--color-accent);
+      }
+
+      @include mobile-s {
+        --size: #{rem(50)};
+      }
+    }
+    &-image {
+
+      @include mobile {
+        width: rem(30);
+        height: rem(30);
+      }
+
+
     }
 
   }
