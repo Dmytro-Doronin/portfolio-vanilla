@@ -1,16 +1,22 @@
 @use '../helpers' as *;
 
 .section {
-  --global-padding: #{rem(160)};
+  --global-padding: #{rem(80)};
 
-  padding-top: var(--global-padding);
-
+  padding-block: var(--global-padding);
+  &:first-child {
+    padding-top: rem(180);
+  }
 
   &__title {
+    @include invisible;
     font-weight: 500;
     margin-bottom: rem(40);
   }
 
+  &__title.active {
+    @include appear;
+  }
 
   @include mobile {
     --global-padding: #{rem(120)};

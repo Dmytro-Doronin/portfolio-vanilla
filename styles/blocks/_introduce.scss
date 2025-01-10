@@ -5,6 +5,7 @@
   &__main {
     display: grid;
 
+    @include invisible;
 
     @include mobile-above {
       grid-template-columns: 1fr auto;
@@ -18,6 +19,10 @@
     @include tablet {
       column-gap: rem(200);
     }
+  }
+
+  &__main.active {
+    @include appear
   }
 
   &__body  {
@@ -57,6 +62,7 @@
       }
     }
   }
+
 
   &__photo-wrapper {
     @include mobile {

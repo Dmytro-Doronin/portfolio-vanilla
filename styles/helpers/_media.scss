@@ -59,6 +59,11 @@ $mobile-s: 480.98;
   }
 }
 
+@mixin appear {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 @mixin hover($hasActiveEffectOnMobile: true) {
   @media (any-hover: hover) {
     &:hover {

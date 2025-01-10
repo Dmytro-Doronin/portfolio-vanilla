@@ -2,4 +2,11 @@
 
 .skills {
 
+  &__item {
+    @include invisible;
+  }
+
+  &__item.active {
+    @include appear;
+  }
 }

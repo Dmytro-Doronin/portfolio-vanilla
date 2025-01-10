@@ -15,6 +15,10 @@
   @include visually-hidden;
 }
 
+.invisible {
+  @include invisible;
+}
+
 .hidden-mobile {
   @include mobile {
     display: none !important;
