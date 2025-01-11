@@ -13,7 +13,6 @@
       @include laptop {
         column-gap: rem(14);
       }
-
     }
 
     &-button {
@@ -39,6 +38,7 @@
       }
     }
   }
+
 
   &__content {
     &:not(.is-active) {

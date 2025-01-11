@@ -5,8 +5,6 @@
   &__main {
     display: grid;
 
-    @include invisible;
-
     @include mobile-above {
       grid-template-columns: 1fr auto;
       column-gap: rem(270);
@@ -21,9 +19,6 @@
     }
   }
 
-  &__main.active {
-    @include appear
-  }
 
   &__body  {
     display: flex;

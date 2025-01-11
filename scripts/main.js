@@ -6,4 +6,4 @@ import Animation from "./Animation.js";
 new Header();
 new Theme();
 new Tabs();
-// new Animation();
+new Animation();

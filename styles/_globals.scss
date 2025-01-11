@@ -90,3 +90,11 @@ h3, .h4 {
   outline-offset: rem(4);
   transition-duration: 0s !important;
 }
+
+[js-animation] {
+  @include invisible;
+}
+
+[js-animation].active {
+  @include appear;
+}

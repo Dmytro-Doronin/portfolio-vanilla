@@ -363,6 +363,17 @@ h3, .h4 {
   transition-duration: 0s !important;
 }
 
+[js-animation] {
+  transform: translate(0, 7.5rem);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+[js-animation].active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .header {
   position: sticky;
   z-index: 100;
@@ -575,9 +586,6 @@ h3, .h4 {
 
 .introduce__main {
   display: grid;
-  transform: translate(0, 7.5rem);
-  opacity: 0;
-  transition: all 0.5s ease;
 }
 @media (width > 47.99875rem) {
   .introduce__main {
@@ -594,10 +602,6 @@ h3, .h4 {
   .introduce__main {
     column-gap: 12.5rem;
   }
-}
-.introduce__main.active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 .introduce__body {
   display: flex;
