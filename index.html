@@ -73,7 +73,7 @@
               </div>
               <div class="introduce__photo-wrapper">
                 <img
-                    src="./images/my-photo.jpg"
+                    src="./images/portfolio/me-2-Photoroom.png"
                     alt="My photo"
                     class="introduce__photo-image"
                     width="250" height="350"
@@ -95,13 +95,25 @@
                       <div class="skill-card"> HTML (HTML5), EJS</div>
                     </li>
                     <li class="skills__item" js-animation>
-                      <div class="skill-card"> HTML (HTML5), EJS</div>
+                      <div class="skill-card"> CSS (CSS3), SASS (SCSS)</div>
                     </li>
                     <li class="skills__item" js-animation>
-                    <div class="skill-card"> HTML (HTML5), EJS</div>
+                    <div class="skill-card"> JavaScript (ES6+), TypeScript</div>
                   </li>
                     <li class="skills__item" js-animation>
-                    <div class="skill-card"> HTML (HTML5), EJS</div>
+                    <div class="skill-card">Angular</div>
+                  </li>
+                    <li class="skills__item" js-animation>
+                      <div class="skill-card">NgRx, RxJs</div>
+                    </li>
+                    <li class="skills__item" js-animation>
+                    <div class="skill-card">REST API</div>
+                  </li>
+                    <li class="skills__item" js-animation>
+                      <div class="skill-card">Basic understanding NodeJs (NestJs)</div>
+                    </li>
+                    <li class="skills__item" js-animation>
+                    <div class="skill-card">English level - B1</div>
                   </li>
 
 
@@ -114,9 +126,18 @@
                   skills
                 </h2>
                 <div class="skills__body">
-                  <ul class="skills__list">
+                  <ul class="skills__list grid">
                     <li class="skills__item" js-animation>
-                      <div class="skill-card"> HTML (HTML5), EJS</div>
+                      <div class="skill-card">I am responsible about deadlines</div>
+                    </li>
+                    <li class="skills__item" js-animation>
+                      <div class="skill-card">I am attentive to the details of the terms of reference</div>
+                    </li>
+                    <li class="skills__item" js-animation>
+                      <div class="skill-card">I welcome constructive criticism and am always happy to find new points of professional and personal growth</div>
+                    </li>
+                    <li class="skills__item" js-animation>
+                      <div class="skill-card">I am motivated to improve my skills, constantly studying new technologies in my field of activity</div>
                     </li>
                   </ul>
                 </div>
@@ -133,31 +154,31 @@
         </div>
         <div class="section__body">
           <div class="portfolio container">
-            <div class="portfolio__tabs-buttons" role="tablist" aria-labelledby="portfolio-category-title" js-animation>
-              <button
-                  class="portfolio__tabs-button is-active"
-                  id="tab-1"
-                  type="button"
-                  role="tab"
-                  aria-controls="tabpanel-1"
-                  data-js-tabs-button
-                  aria-selected="true"
-              >
-                SPA
-              </button>
-              <button
-                  class="portfolio__tabs-button"
-                  id="tab-2"
-                  type="button"
-                  role="tab"
-                  aria-controls="tabpanel-2"
-                  data-js-tabs-button
-                  aria-selected="false"
-                  tabindex="-1"
-              >
-                Vanilla Js
-              </button>
-          </div>
+<!--            <div class="portfolio__tabs-buttons" role="tablist" aria-labelledby="portfolio-category-title" js-animation>-->
+<!--              <button-->
+<!--                  class="portfolio__tabs-button is-active"-->
+<!--                  id="tab-1"-->
+<!--                  type="button"-->
+<!--                  role="tab"-->
+<!--                  aria-controls="tabpanel-1"-->
+<!--                  data-js-tabs-button-->
+<!--                  aria-selected="true"-->
+<!--              >-->
+<!--                SPA-->
+<!--              </button>-->
+<!--              <button-->
+<!--                  class="portfolio__tabs-button"-->
+<!--                  id="tab-2"-->
+<!--                  type="button"-->
+<!--                  role="tab"-->
+<!--                  aria-controls="tabpanel-2"-->
+<!--                  data-js-tabs-button-->
+<!--                  aria-selected="false"-->
+<!--                  tabindex="-1"-->
+<!--              >-->
+<!--                Vanilla Js-->
+<!--              </button>-->
+<!--          </div>-->
             <div class="portfolio__body">
               <div
                   class="portfolio__content is-active"
@@ -171,7 +192,7 @@
                     <article class="portfolio-card">
                       <div class="portfolio-card__image-wrapper">
                         <img
-                            src="./images/portfolio/blogs.png"
+                            src="./images/portfolio/e-commerce.png"
                             alt=""
                             class="portfolio-card__image"
                             width="400" height="320"
@@ -180,9 +201,13 @@
                       </div>
                       <div class="portfolio-card__body">
                         <div class="portfolio-card__header">
-                          <h2 class="portfolio-card__header-title">Blog</h2>
+                          <h2 class="portfolio-card__header-title">E-commerce</h2>
                           <div class="portfolio-card__header-links">
-                            <a href="#" class="portfolio-card__header-link">
+                            <a
+                                href="https://e-commerce-angular-self.vercel.app/"
+                                target="_blank"
+                                class="portfolio-card__header-link"
+                            >
                               <img
                                   src="./images/portfolio/web.png"
                                   alt="web-site"
@@ -191,7 +216,11 @@
                                   class="portfolio-card__header-image"
                               />
                             </a>
-                            <a href="#" class="portfolio-card__header-link">
+                            <a
+                                href="https://github.com/Dmytro-Doronin/e-commerce-angular"
+                                target="_blank"
+                                class="portfolio-card__header-link"
+                            >
                               <img
                                   src="./images/portfolio/github-2.png"
                                   alt="github"
@@ -204,9 +233,9 @@
                         </div>
 
                         <div class="portfolio-card__description">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, earum ex expedita
-                            harum id impedit magni maiores officia ratione? Dignissimos earum hic magni, quibusdam quidem
-                            quisquam quo recusandae similique.
+                          <p>This is a fully functional E-commerce web application built with Angular and RxJS.
+                            The project demonstrates modern frontend development best practices, including state management,
+                            asynchronous data handling, and dynamic UI updates.
                           </p>
                         </div>
                         <div class="technologies">
@@ -215,22 +244,10 @@
                               <img src="./images/portfolio/angular.png" alt="Angular" class="technologies__list-image" width="36" height="36"/>
                             </li>
                             <li class="technologies__list-item">
-                              <img src="./images/portfolio/badge.png" alt="NgRx" class="technologies__list-image" width="36" height="36"/>
-                            </li>
-                            <li class="technologies__list-item">
                               <img src="./images/portfolio/typescript.png" alt="Typescript" class="technologies__list-image" width="36" height="36"/>
                             </li>
                             <li class="technologies__list-item">
-                              <img src="./images/portfolio/node.png" alt="Node" class="technologies__list-image" width="36" height="36"/>
-                            </li>
-                            <li class="technologies__list-item">
-                              <img src="./images/portfolio/NestJS.svg" alt="NestJs" class="technologies__list-image" width="36" height="36"/>
-                            </li>
-                            <li class="technologies__list-item">
-                              <img src="./images/portfolio/mongo.png" alt="MongoDb" class="technologies__list-image" width="36" height="36"/>
-                            </li>
-                            <li class="technologies__list-item">
-                              <img src="./images/portfolio/aws.png" alt="Aws3" class="technologies__list-image" width="36" height="36"/>
+                              <img src="./images/portfolio/rxjs-1.svg" alt="Typescript" class="technologies__list-image" width="36" height="36"/>
                             </li>
                           </ul>
                         </div>
@@ -238,79 +255,6 @@
                     </article>
                   </li>
                   <li class="portfolio__list-item" js-animation>
-                    <article class="portfolio-card">
-                      <div class="portfolio-card__image">
-                        <img
-                            src="./images/portfolio/blogs.png"
-                            alt=""
-                            class="person-card__image"
-                            width="400" height="320"
-                            loading="lazy"
-                        />
-                      </div>
-                      <div class="portfolio-card__body">
-                        <h2 class="portfolio-card__title">
-                          <a href="#" target="_blank" class="portfolio-card__link" title="Open the website in a new tab">Blog</a>
-                        </h2>
-                        <div class="portfolio-card__description">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, earum ex expedita
-                            harum id impedit magni maiores officia ratione? Dignissimos earum hic magni, quibusdam quidem
-                            quisquam quo recusandae similique.
-                          </p>
-                        </div>
-                        <div class="technologies">
-                          <ul class="technologies__list">
-                            <li class="technologies__list-item">
-                              <img src="#" alt="" class="technologies__list-image" width="36" height="36"/>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="portfolio__list-item" js-animation>
-                    <article class="portfolio-card">
-                      <div class="portfolio-card__image">
-                        <img
-                            src="./images/portfolio/blogs.png"
-                            alt=""
-                            class="person-card__image"
-                            width="400" height="320"
-                            loading="lazy"
-                        />
-                      </div>
-                      <div class="portfolio-card__body">
-                        <h2 class="portfolio-card__title">
-                          <a href="#" class="portfolio-card__link">Blog</a>
-
-                        </h2>
-                        <div class="portfolio-card__description">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, earum ex expedita
-                            harum id impedit magni maiores officia ratione? Dignissimos earum hic magni, quibusdam quidem
-                            quisquam quo recusandae similique.
-                          </p>
-                        </div>
-                        <div class="technologies">
-                          <ul class="technologies__list">
-                            <li class="technologies__list-item">
-                              <img src="#" alt="" class="technologies__list-image" width="36" height="36"/>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
-                </ul>
-              </div>
-              <div
-                  class="portfolio__content"
-                  id="tabpanel-2"
-                  aria-labelledby="tab-2"
-                  tabindex="0"
-                  data-js-tabs-content
-              >
-                <ul class="portfolio__list grid">
-                  <li class="portfolio__list-item">
                     <article class="portfolio-card">
                       <div class="portfolio-card__image-wrapper">
                         <img
@@ -325,7 +269,11 @@
                         <div class="portfolio-card__header">
                           <h2 class="portfolio-card__header-title">Blog</h2>
                           <div class="portfolio-card__header-links">
-                            <a href="#" class="portfolio-card__header-link">
+                            <a
+                                href="https://blog-frontend-angular-eight.vercel.app/main/blogs-page"
+                                target="_blank"
+                                class="portfolio-card__header-link"
+                            >
                               <img
                                   src="./images/portfolio/web.png"
                                   alt="web-site"
@@ -334,7 +282,11 @@
                                   class="portfolio-card__header-image"
                               />
                             </a>
-                            <a href="#" class="portfolio-card__header-link">
+                            <a
+                                href="https://github.com/Dmytro-Doronin/blog-frontend-Angular"
+                                target="_blank"
+                                class="portfolio-card__header-link"
+                            >
                               <img
                                   src="./images/portfolio/github-2.png"
                                   alt="github"
@@ -347,9 +299,10 @@
                         </div>
 
                         <div class="portfolio-card__description">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, earum ex expedita
-                            harum id impedit magni maiores officia ratione? Dignissimos earum hic magni, quibusdam quidem
-                            quisquam quo recusandae similique.
+                          <p>A modern blog platform where users can create, edit, and manage blogs and posts.
+                            The platform supports user authentication, file uploads (images), and dynamic content loading.
+                            Built with Angular for the frontend, Nest.js for the backend, and MongoDB as the database.
+                            The project also integrates with AWS S3 for media storage.
                           </p>
                         </div>
                         <div class="technologies">
@@ -380,11 +333,158 @@
                       </div>
                     </article>
                   </li>
+                  <li class="portfolio__list-item" js-animation>
+                    <article class="portfolio-card">
+                      <div class="portfolio-card__image-wrapper">
+                        <img
+                            src="./images/portfolio/cards.png"
+                            alt=""
+                            class="portfolio-card__image"
+                            width="400" height="320"
+                            loading="lazy"
+                        />
+                      </div>
+                      <div class="portfolio-card__body">
+                        <div class="portfolio-card__header">
+                          <h2 class="portfolio-card__header-title">Quiz cards</h2>
+                          <div class="portfolio-card__header-links">
+                            <a
+                                href="https://flash-cards-ruby-two.vercel.app/"
+                                target="_blank"
+                                class="portfolio-card__header-link"
+                            >
+                              <img
+                                  src="./images/portfolio/web.png"
+                                  alt="web-site"
+                                  width="36"
+                                  height="36"
+                                  class="portfolio-card__header-image"
+                              />
+                            </a>
+                            <a
+                                href="https://github.com/Dmytro-Doronin/flash-cards"
+                                target="_blank"
+                                class="portfolio-card__header-link"
+                            >
+                              <img
+                                  src="./images/portfolio/github-2.png"
+                                  alt="github"
+                                  width="36"
+                                  height="36"
+                                  class="portfolio-card__header-image link link--github"
+                              />
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-card__description">
+                          <p>An interactive learning platform designed to help users study and memorize information using flashcards.
+                            The application allows creating, editing, and organizing card sets for efficient learning.
+                            Built with React and TypeScript for a robust and scalable frontend,
+                            Redux and RTK-Query for state management and API handling, and styled with SCSS for a modern and responsive user interface.
+                          </p>
+                        </div>
+                        <div class="technologies">
+                          <ul class="technologies__list">
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/react.png" alt="Angular" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/redux.png" alt="NgRx" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                            <li class="technologies__list-item">
+                              <img src="./images/portfolio/typescript.png" alt="Typescript" class="technologies__list-image" width="36" height="36"/>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
                 </ul>
               </div>
-            </div>
-        </div>
+<!--              <div-->
+<!--                  class="portfolio__content"-->
+<!--                  id="tabpanel-2"-->
+<!--                  aria-labelledby="tab-2"-->
+<!--                  tabindex="0"-->
+<!--                  data-js-tabs-content-->
+<!--              >-->
+<!--                <ul class="portfolio__list grid">-->
+<!--                  <li class="portfolio__list-item">-->
+<!--                    <article class="portfolio-card">-->
+<!--                      <div class="portfolio-card__image-wrapper">-->
+<!--                        <img-->
+<!--                            src="./images/portfolio/blogs.png"-->
+<!--                            alt=""-->
+<!--                            class="portfolio-card__image"-->
+<!--                            width="400" height="320"-->
+<!--                            loading="lazy"-->
+<!--                        />-->
+<!--                      </div>-->
+<!--                      <div class="portfolio-card__body">-->
+<!--                        <div class="portfolio-card__header">-->
+<!--                          <h2 class="portfolio-card__header-title">Blog</h2>-->
+<!--                          <div class="portfolio-card__header-links">-->
+<!--                            <a href="#" class="portfolio-card__header-link">-->
+<!--                              <img-->
+<!--                                  src="./images/portfolio/web.png"-->
+<!--                                  alt="web-site"-->
+<!--                                  width="36"-->
+<!--                                  height="36"-->
+<!--                                  class="portfolio-card__header-image"-->
+<!--                              />-->
+<!--                            </a>-->
+<!--                            <a href="#" class="portfolio-card__header-link">-->
+<!--                              <img-->
+<!--                                  src="./images/portfolio/github-2.png"-->
+<!--                                  alt="github"-->
+<!--                                  width="36"-->
+<!--                                  height="36"-->
+<!--                                  class="portfolio-card__header-image link link&#45;&#45;github"-->
+<!--                              />-->
+<!--                            </a>-->
+<!--                          </div>-->
+<!--                        </div>-->
 
+<!--                        <div class="portfolio-card__description">-->
+<!--                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, earum ex expedita-->
+<!--                            harum id impedit magni maiores officia ratione? Dignissimos earum hic magni, quibusdam quidem-->
+<!--                            quisquam quo recusandae similique.-->
+<!--                          </p>-->
+<!--                        </div>-->
+<!--                        <div class="technologies">-->
+<!--                          <ul class="technologies__list">-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/angular.png" alt="Angular" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/badge.png" alt="NgRx" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/typescript.png" alt="Typescript" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/node.png" alt="Node" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/NestJS.svg" alt="NestJs" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/mongo.png" alt="MongoDb" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                            <li class="technologies__list-item">-->
+<!--                              <img src="./images/portfolio/aws.png" alt="Aws3" class="technologies__list-image" width="36" height="36"/>-->
+<!--                            </li>-->
+<!--                          </ul>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </article>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--              </div>-->
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer container" id="contact">
@@ -392,7 +492,7 @@
         <h3 class="footer__title">Contact:</h3>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a href="#" class="footer__list-link">
+            <a href="mailto:doronindmytro623@gmail.com" target="_blank" class="footer__list-link">
               <span class="footer__list-text">Send an email</span>
               <svg class="i-icon icon-email" data-js-svg-id="icon-email" viewBox="0 0 40 40" fill="#fff" height="40" width="40">
                 <path d="M31.586 18.034a.828.828 0 0 0-.827 0L20 24.117 9.241 18.034a.828.828 0 0 0-1.241.72v7.142a2.483 2.483 0 0 0 2.483 2.483h19.034A2.483 2.483 0 0 0 32 25.896v-7.138a.83.83 0 0 0-.414-.724Z" fill="#fff"></path><path d="M29.517 11H10.483A2.483 2.483 0 0 0 8 13.483v1.551a.827.827 0 0 0 .414.72l11.172 6.311a.828.828 0 0 0 .828 0l11.172-6.31a.827.827 0 0 0 .414-.72v-1.552A2.483 2.483 0 0 0 29.517 11Z" fill="#fff"></path>
@@ -400,7 +500,7 @@
             </a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="footer__list-link footer__list-link--second">
+            <a href="https://github.com/Dmytro-Doronin" target="_blank" class="footer__list-link footer__list-link--second">
               <span class="footer__list-text">Github</span>
               <svg class="i-icon icon-github" data-js-svg-id="icon-github" viewBox="0 0 216 216" fill="#fff" height="40" width="40">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M107.562 33C65.778 33 32 67.146 32 109.389c0 33.767 21.643 62.35 51.668 72.466 3.753.761 5.128-1.644 5.128-3.666 0-1.771-.123-7.841-.123-14.166-21.02 4.554-25.397-9.106-25.397-9.106-3.378-8.853-8.383-11.128-8.383-11.128-6.88-4.68.5-4.68.5-4.68 7.632.506 11.637 7.841 11.637 7.841 6.754 11.635 17.638 8.347 22.017 6.324.625-4.933 2.628-8.348 4.755-10.244-16.765-1.771-34.404-8.347-34.404-37.689 0-8.347 3-15.176 7.755-20.488-.75-1.896-3.378-9.739.752-20.236 0 0 6.38-2.024 20.766 7.841a72.405 72.405 0 0 1 18.891-2.53c6.381 0 12.884.887 18.89 2.53 14.388-9.864 20.768-7.84 20.768-7.84 4.13 10.496 1.5 18.339.75 20.235 4.88 5.312 7.757 12.14 7.757 20.488 0 29.342-17.639 35.791-34.529 37.689 2.753 2.402 5.129 6.955 5.129 14.164 0 10.244-.124 18.465-.124 20.993 0 2.024 1.377 4.429 5.129 3.67C161.357 171.737 183 143.156 183 109.389 183.123 67.146 149.221 33 107.562 33Z" fill="#24292F"></path>
@@ -408,7 +508,7 @@
             </a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="footer__list-link footer__list-link--third">
+            <a href="https://t.me/DmytroDoronin" target="_blank" class="footer__list-link footer__list-link--third">
               <span class="footer__list-text">Telegram</span>
               <svg class="i-icon icon-telegram" data-js-svg-id="icon-telegram" viewBox="0 0 40 40" fill="#fff" height="40" width="40">
                 <path d="m31.78 11.82-3.599 16.973c-.271 1.198-.98 1.496-1.985.931l-5.484-4.04-2.646 2.544c-.293.293-.537.538-1.102.538l.394-5.584 10.163-9.184c.442-.394-.096-.612-.687-.218l-12.563 7.91-5.41-1.692c-1.176-.367-1.197-1.177.245-1.74l21.157-8.151c.98-.368 1.837.218 1.517 1.714Z" fill="#fff"></path>
