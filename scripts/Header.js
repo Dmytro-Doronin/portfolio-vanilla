@@ -5,6 +5,7 @@ class Header {
         root: '[data-js-header]',
         overlay: '[data-header-overlay]',
         burgerButton: '[data-js-header-burger-button]',
+        link: '[data-header-link]',
     }
 
     stateClasses = {
@@ -16,6 +17,7 @@ class Header {
         this.rootElement = document.querySelector(this.selectors.root);
         this.overlayElement = this.rootElement.querySelector(this.selectors.overlay);
         this.burgerButtonElement = this.rootElement.querySelector(this.selectors.burgerButton);
+        this.linksElement = this.rootElement.querySelectorAll(this.selectors.link);
         this.bindEvents()
     }
 
@@ -27,6 +29,9 @@ class Header {
 
     bindEvents() {
         this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick);
+        this.linksElement.forEach((link) => {
+            link.addEventListener('click', this.onBurgerButtonClick)
+        })
     }
 }
 
